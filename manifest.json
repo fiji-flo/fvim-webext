@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "fvim",
+  "version": "1.0",
+  "description": "vim + 57",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "match_about_blank": true,
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
