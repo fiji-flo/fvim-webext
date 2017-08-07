@@ -24,6 +24,7 @@ const CMDS = {
   scrollRight: () => window.scollBy(40, 0),
   newTab: () => emit({ cmd: 'newTab' }),
   setInsertMode: () => mode = MODES.insert,
+  focusUrlBar: () => emit({ cmd: 'focusUrlBar' }),
   reload: (force=false) => document.location.reload(force),
 };
 
